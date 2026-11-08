@@ -24,13 +24,14 @@
             max-width: 340px;
             width: 90%;
         }
-        /* تنسيق اللوجو فوق المربع */
-        .logo {
-            width: 100px;
-            height: 100px;
+        /* تنسيق اللوجو الدائري */
+        .logo-img {
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 10px;
+            margin: 0 auto 15px auto;
+            display: block;
             border: 2px solid #38bdf8;
             box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
         }
@@ -80,8 +81,8 @@
 </head>
 <body>
     <div class="card">
-        <!-- صورة اللوجو -->
-        <img src="logo.png" alt="SANTOS X Logo" class="logo">
+        <!-- اللوجو بالاسم الجديد img.jpg -->
+        <img src="img.jpg" alt="Logo" class="logo-img">
         
         <h2>كود التحقق الخاص بك</h2>
         <h1 id="codeBox">------</h1>

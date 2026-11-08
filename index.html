@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>بوابة التحقق</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-family: Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            text-align: center;
+            border: 2px solid #38bdf8;
+        }
+        h1 {
+            font-size: 40px;
+            letter-spacing: 3px;
+            color: #38bdf8;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>كود التحقق الخاص بك</h2>
+        <h1 id="codeBox">------</h1>
+    </div>
+    <script>
+        // توليد رقم عشوائي مكون من 6 أرقام لكل شخص يفتح الصفحة
+        const randomCode = Math.floor(100000 + Math.random() * 900000);
+        document.getElementById("codeBox").innerText = randomCode;
+    </script>
+</body>
+</html>

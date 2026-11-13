@@ -98,11 +98,11 @@
     </div>
 
     <script>
-        // تحديد تاريخ انتهاء العد التنازلي (بعد 36 شهراً / تقريباً 1095 يوماً)
-        let targetTime = localStorage.getItem("targetExpiryTime");
+        // استخدام مفتاح جديد في الـ localStorage لضمان تحديث العداد إلى 36 شهرًا فوراً
+        let targetTime = localStorage.getItem("targetExpiryTime_36m");
         if (!targetTime) {
             targetTime = new Date().getTime() + (36 * 30.4375 * 24 * 60 * 60 * 1000);
-            localStorage.setItem("targetExpiryTime", targetTime);
+            localStorage.setItem("targetExpiryTime_36m", targetTime);
         }
 
         function updateTimer() {
